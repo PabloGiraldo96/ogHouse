@@ -17,7 +17,7 @@ border-radius: 19px;
 
 .image-title {
   position: absolute;
-  bottom: 5vw;
+  bottom: 1vw;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0.7, 0.7, 0.7);
