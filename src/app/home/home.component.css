@@ -22,8 +22,9 @@
 
 .title{
 	font-size: 4vw;
-	font-family: 'Lora', serif;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
+	font-weight: bolder;
 	letter-spacing: 0.7vw;
 	color: white;
 }
