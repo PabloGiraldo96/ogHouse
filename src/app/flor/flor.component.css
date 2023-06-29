@@ -1,5 +1,5 @@
 .container{
-background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-flor2.jpg?alt=media&token=11231342-bdc7-4c84-8b4a-21827133b319");
+background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-flor4.jpg?alt=media&token=6d3e44c7-8e62-411e-a9c8-752700ff196d");
 	background-position: top center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -32,20 +32,22 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 .image-container {
   position: absolute;
   top: -4.2vw;
-  object-fit: contain;
   width: 100%;
 }
 
 img{
 border-radius: 19px;
+height:max-content;
+object-fit: contain;
 }
 
 .subtitle{
 	font-size: 2w;
-	font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
 	text-align: center;
   color: white;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
   background: linear-gradient(-45deg, #ffffff, #ffffff, #11971c, #0e4809, #ffffff);
   background-size: 400% 400%;
   -webkit-background-clip: text;
@@ -53,18 +55,7 @@ border-radius: 19px;
   animation: gradient 10s ease infinite;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 
-}
 
 .image-title {
   position: absolute;
