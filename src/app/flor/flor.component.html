@@ -8,7 +8,7 @@
     </div>
 	<br>
     <div class="row row-cols-1 row-cols-md-4 mt-5 align-self-center">
-        <div class="col mb-3" *ngFor="let flor of flores">
+        <div class="col mb-3 slide-top" *ngFor="let flor of flores">
     <div class="card h-100 shadow text-center mt-3 mb-3"> 
     <div class="image-container position-relative">
         <img src={{flor.foto[0]}} alt="foto" class="img-fluid w-100 mt-3 zoom">
@@ -18,6 +18,6 @@
  
     <h6 class="fw-bold mt-3">Price: {{flor.precio}}</h6>
     </div>
-	<a href="https://api.whatsapp.com/send?phone=3209525410" class="floating-btn" target="_blank">
+	<!--<a href="https://api.whatsapp.com/send?phone=3209525410" class="floating-btn" target="_blank">
 	<i class="fab fa-whatsapp"></i>
-	</a>
+	</a>-->

@@ -5,6 +5,7 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 	background-attachment: fixed;
 	padding: 8%;
 	position: relative;
+  image-rendering: auto;
 	z-index: 0;
 }
 
@@ -39,6 +40,7 @@ img{
 border-radius: 19px;
 height:max-content;
 object-fit: contain;
+image-rendering: auto;
 }
 
 .subtitle{
@@ -77,23 +79,9 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 }
 
-.btn{
-  position: absolute;
-  bottom: 160px;
-  color: black;
-  font-family: 'Poppins', sans-serif;;
-  font-size: larger;
-  border: 4px solid rgb(0, 0, 0);
-  border-radius: 17px;
-  background-color: #d3d3d3;
-  transition: transform 0.4s, background-color 0.3s, color 0.3s ;
-}
-
-.btn:hover{
-transform: translateY(-12px);
-background-color: #d6f6ff;
-border: 4px solid rgb(0, 89, 255);
-color: #000000;
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -112,6 +100,28 @@ color: #000000;
 .floating-btn:hover {
   opacity: 0.8;
   transform: scale(1.1);
+}
+
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
 }
 
 
@@ -151,12 +161,6 @@ img, .card{
 	width: 75vw;
 	height: 90vw;
 
-}
-
-
-.btn{
-position: relative;
-bottom: 10px;
 }
 
 }
