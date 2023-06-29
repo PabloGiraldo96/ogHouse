@@ -1,0 +1,46 @@
+.Banner{
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-evento.jpg?alt=media&token=0665e3ea-fb7b-4afa-ba7c-c449ac16c4a0");
+	background-position: top center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 19%;
+	position: relative;
+	z-index: 1;
+}
+
+.Banner::after {
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: black;
+	opacity: 0.4;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.title{
+	font-size: 4vw;
+	font-family: 'Lora', serif;
+	text-align: center;
+	letter-spacing: 0.7vw;
+	color: white;
+}
+
+@media screen and (max-width: 768px){
+
+.title{
+position: absolute;
+top: 70vw;
+left: 0vw;
+font-size: 9.5vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños */    
+}
+
+.Banner{
+	object-fit: contain;
+    padding: 8%; /* Ajusta el relleno del banner para dispositivos más pequeños */
+	height: 170vw;
+  }
+
+}

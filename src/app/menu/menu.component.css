@@ -1,0 +1,14 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.menu{
+  background-color: black;
+
+}
+
+.center-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

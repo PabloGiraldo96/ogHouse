@@ -1,0 +1,14 @@
+.sesion{
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-evento.jpg?alt=media&token=0665e3ea-fb7b-4afa-ba7c-c449ac16c4a0");
+	background-position: top center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 19%;
+	position: relative;
+	z-index: 1;
+}
+
+.subtitle{
+font-family: 'Noto Sans', sans-serif;
+font-weight: bolder;
+}
