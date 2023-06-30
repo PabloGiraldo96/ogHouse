@@ -1,4 +1,4 @@
-.container{
+.containerr{
 background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-flor4.jpg?alt=media&token=6d3e44c7-8e62-411e-a9c8-752700ff196d");
 	background-position: top center;
 	background-size: cover;
@@ -9,13 +9,13 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 	z-index: 0;
 }
 
-.container::after {
+.containerr::after {
 	content: '';
 	position: absolute;
 	top:0;
 	left:0;
 	background-color: black;
-	opacity: 0.8;
+	opacity: 0.6;
 	height: 100%;
 	width: 100%;
 	z-index: -1;
@@ -32,7 +32,7 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 
 .image-container {
   position: absolute;
-  top: -4.2vw;
+  top: -3.2vw;
   width: 100%;
 }
 
@@ -44,10 +44,12 @@ image-rendering: auto;
 }
 
 .subtitle{
-	font-size: 2w;
+	font-size: 2vw;
 	font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 	text-align: center;
+	background-color: black;
+	opacity: 0.6;
   color: white;
 	letter-spacing: 2px;
   background: linear-gradient(-45deg, #ffffff, #ffffff, #11971c, #0e4809, #ffffff);
@@ -61,7 +63,7 @@ image-rendering: auto;
 
 .image-title {
   position: absolute;
-  bottom: 1vw;
+  bottom: 0.5vw;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
@@ -79,11 +81,10 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 }
 
-.slide-top {
-	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.slide-bck-center {
+	-webkit-animation: slide-bck-center 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: slide-bck-center 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
-
 
 .floating-btn {
   position: fixed;
@@ -103,24 +104,24 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 }
 
 
-@-webkit-keyframes slide-top {
+@-webkit-keyframes slide-bck-center {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
   }
   100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateZ(-400px);
+            transform: translateZ(-400px);
   }
 }
-@keyframes slide-top {
+@keyframes slide-bck-center {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
   }
   100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateZ(-400px);
+            transform: translateZ(-400px);
   }
 }
 
@@ -157,10 +158,18 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 	height: 100%;
   }
 
-img, .card{
-	width: 75vw;
-	height: 90vw;
 
+.image-title{
+  position: absolute;
+  bottom: 7vw;
+}
+
+.image-container {
+  object-fit: contain;
+  position: absolute;
+  left: -1vw;
+  top: -4.4vw;
+  width: 85vw;
 }
 
 }

@@ -38,7 +38,7 @@ public destilado5: Destilados = {
     precio: 75000
 }
 
-public destilados: Destilados[] = [this.destilado1, this.destilado2, this.destilado3, this.destilado4, this.destilado5]
+public destilados: Destilados[] = [this.destilado2, this.destilado3, this.destilado4, this.destilado5]
 
   constructor() {console.log(this.destilados) }
 }

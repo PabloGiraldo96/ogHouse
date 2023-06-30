@@ -1,3 +1,26 @@
+.containerr{
+background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-destilados-banner.png?alt=media&token=6c51dd67-761a-41ea-b2e3-504d6a1bcab5");
+	background-position: top center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 8%;
+	position: relative;
+  image-rendering: auto;
+	z-index: 0;
+}
+
+.containerr::after {
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: black;
+	opacity: 0.6;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
 .zoom{
     transition: transform .5s;
 }
@@ -33,23 +56,18 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
             inset -28px -28px 56px #474747;
 }
 
-.btn{
-  position: absolute;
-  bottom: 160px;
-  color: black;
-  font-family: 'Poppins', sans-serif;;
-  font-size: larger;
-  border: 4px solid rgb(0, 0, 0);
-  border-radius: 17px;
-  background-color: #d3d3d3;
-  transition: transform 0.4s, background-color 0.3s, color 0.3s ;
-}
-
-.btn:hover{
-transform: translateY(-12px);
-background-color: #d6f6ff;
-border: 4px solid rgb(0, 89, 255);
-color: #000000;
+.subtitle{
+	font-size: 2w;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+	text-align: center;
+  color: white;
+	letter-spacing: 2px;
+  background: linear-gradient(-45deg, #ffffff, #ffffff, #11971c, #0e4809, #ffffff);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 10s ease infinite;
 }
 
 @media screen and (max-width: 600px) {
@@ -59,27 +77,20 @@ color: #000000;
 	font-size: 7vw;
 }
 
-.subtitle_one{
-	font-size: 7vw;
-}
-
-.title{
-	font-size: 7vw;
-}
-
 .container {
 	height: 100%;
   }
 
 img, .card{
 	width: 75vw;
-	height: 90vw;
+	height: 65vw;
 
 }
 
-.btn{
-position: relative;
-bottom: 10px;
+.image-container {
+  position: absolute;
+  left: -1vw;
+  top: -4.3vw;
+  width: 76vw;
 }
-
 }
