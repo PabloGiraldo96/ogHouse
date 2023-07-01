@@ -1,5 +1,5 @@
 .containerr{
-background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-destilados-banner.png?alt=media&token=6c51dd67-761a-41ea-b2e3-504d6a1bcab5");
+background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-destilados-banner.jpg?alt=media&token=e2d5f372-42e0-42a5-bc81-ee56f5d07f7d");
 	background-position: top center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -63,14 +63,14 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 	text-align: center;
   color: white;
 	letter-spacing: 2px;
-  background: linear-gradient(-45deg, #ffffff, #ffffff, #11971c, #0e4809, #ffffff);
+  background: linear-gradient(-45deg, #22ff00, #51b06a, #ffffff, #ffffff, #ffffff);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient 10s ease infinite;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 768px */
 
 .subtitle{
