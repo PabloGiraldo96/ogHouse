@@ -11,6 +11,7 @@ import { DestiladosComponent } from './destilados/destilados.component';
 import { ComestiblesComponent } from './comestibles/comestibles.component';
 import { ProductosComponent } from './productos/productos.component';
 import { ExtraccionesComponent } from './extracciones/extracciones.component';
+import { EventosComponent } from './eventos/eventos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ExtraccionesComponent } from './extracciones/extracciones.component';
     DestiladosComponent,
     ComestiblesComponent,
     ProductosComponent,
-    ExtraccionesComponent
+    ExtraccionesComponent,
+    EventosComponent
   ],
   imports: [
     BrowserModule,

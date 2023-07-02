@@ -27,7 +27,7 @@ public flor3: Flores = {
 }
 public flor4: Flores = {
     nombre: 'Lima Haze',  
-    foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-flor5.jpg?alt=media&token=cb361d3f-afa3-403f-8ed1-668f95e1fac0'],
+    foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-flor5.jpg?alt=media&token=bce7b0b4-5312-4f61-96c6-dc9541217275'],
     descripcion: 'Sativa sabor dulce',
     precio: 17000
 }

@@ -141,22 +141,16 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 	font-size: 7vw;
 }
 
-.subtitle_one{
-	font-size: 7vw;
-}
-
-.title{
-	font-size: 7vw;
-}
-
-.container {
-	height: 100%;
-  }
-
 
 .image-title{
   position: absolute;
   bottom: 7vw;
+}
+
+.card{
+	width: 75vw;
+	height: 65vw;
+
 }
 
 .image-container {
@@ -164,7 +158,15 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
   position: absolute;
   left: -1vw;
   top: -4.4vw;
-  width: 85vw;
+  width: 76vw;
 }
+
+.containerr{
+	image-rendering: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	object-fit: contain;
+  padding: 8%; /* Ajusta el relleno del banner para dispositivos más pequeños */
+	}
 
 }
