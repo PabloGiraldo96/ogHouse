@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Extracciones } from '../interfaces/Extracciones';
-
+import { interval, Subscription } from 'rxjs';
 @Component({
   selector: 'app-extracciones',
   templateUrl: './extracciones.component.html',
   styleUrls: ['./extracciones.component.css']
 })
-export class ExtraccionesComponent {
-
+export class ExtraccionesComponent implements OnInit {
+private subscription!: Subscription;
+public tiempo:boolean = false
 public extraccion1: Extracciones = {
     nombre: 'Bubble Fruit',  
     foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-extraccion-bubblefruit.jpg?alt=media&token=be9c08ad-ea53-4eee-ba9f-93a1b0021dc0'],
@@ -31,6 +32,13 @@ public extraccion4: Extracciones = {
     foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-extraccion-redmandarinejpg.jpg?alt=media&token=a5cad025-36e5-4f36-b8dd-fdda520c403b'],
     descripcion: 'Destilado Friendly Arms sabor sativa citrica',
     precio: 75000
+}
+
+ngOnInit() {
+  this.subscription = interval(5000) // tiempo de peticion 5 segundos
+  .subscribe(() => {
+    // informacion dinamica del api
+  });
 }
 
 public extracciones: Extracciones[] = [this.extraccion1, this.extraccion2, this.extraccion3, this.extraccion4]
