@@ -6,6 +6,7 @@ import { DestiladosComponent } from './destilados/destilados.component';
 import { ExtraccionesComponent } from './extracciones/extracciones.component';
 import { ComestiblesComponent } from './comestibles/comestibles.component';
 import { ProductosComponent } from './productos/productos.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -15,7 +16,8 @@ const routes: Routes = [
       {path: 'destilados', component: DestiladosComponent}, 
       {path: 'extracciones', component: ExtraccionesComponent},
       {path: 'comestibles', component: ComestiblesComponent},
-      {path: 'productos', component: ProductosComponent}
+      {path: 'productos', component: ProductosComponent},
+      {path: 'footer', component: FooterComponent}
 ];
 
 @NgModule({

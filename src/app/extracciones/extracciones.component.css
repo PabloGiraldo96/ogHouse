@@ -1,3 +1,4 @@
+
 .containerr{
 background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-extraccion-gelatoogjpg.jpg?alt=media&token=44d0d32a-4501-4b31-873b-414f4ec02274");
 	background-position: top center;
@@ -38,7 +39,13 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 	z-index: -1;
 }
 
-
+img{
+position: relative;
+left: 26vw;
+border-radius: 24px;
+width: 30vw;
+height:20vw;
+}
 
 .image-title {
   position: absolute;
@@ -52,69 +59,39 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
   font-size: 16px;
 }
 
-.slider{
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-.slider ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: cambio 15s infinite alternate-reverse;
-    
+.carousel-inner .carousel-item:first-of-type {
+  transform: translateX(0);
 }
 
-.slider li{
-    width: 100%;
-    list-style: none;
+
+
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para dispositivos con un ancho máximo de 768px */
+
+.subtitle{
+	font-size: 7vw;
 }
 
-.slider img{
-	position: relative;
-	left: 26vw;
-	border-radius: 24px;
-	width: 35vw;
-	height:25vw;
-}
- @media screen and (min-width: 769px) {
-   /* Estilos específicos para dispositivos con un ancho máximo de 768px  */
-
-	.subtitle{
-		font-size: 7vw;
-	}
-
-	.containerr {
-		height: 100%;
-  	}
-
-
-
-	img {
-  	position: relative;
-	  width: 100vw;
-	  height: 100vw;
-	}
-
-	.image-title{
-  	position: relative;
-  	bottom: 7vw;
-	}
-} 
-
-
-
-@keyframes cambio{
-    0%   { margin-left: 0;}
-    20%  { margin-left: 0;}
-  
-    25%  { margin-left: -100%;}
-    45%  { margin-left: -100%;}
-  
-    50%  { margin-left: -200%;}
-    700% { margin-left: -200%;}
-  
-    75%  { margin-left: -300%;}
-    100% { margin-left: -300%;}
+.containerr {
+	height: 100%;
   }
+
+img, .card{
+	width: 75vw;
+	height: 65vw;
+
+}
+
+img {
+  position: relative;
+  left: 2vw;
+  width: 76vw;
+}
+
+.image-title{
+  position: relative;
+  bottom: 7vw;
+}
+
+
+}

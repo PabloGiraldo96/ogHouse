@@ -3,7 +3,7 @@
 	background-position: top center;
 	background-size: cover;
 	background-attachment: fixed;
-	padding: 22%;
+	padding: 14%;
 	position: relative;
 	image-rendering: auto;
 	z-index: 1;
@@ -79,6 +79,9 @@ font-size: 7vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños 
 }
 
 .Banner{
+	image-rendering: auto;
+	background-size: cover;
+	background-attachment: fixed;
 	object-fit: contain;
     padding: 8%; /* Ajusta el relleno del banner para dispositivos más pequeños */
 	height: 170vw;

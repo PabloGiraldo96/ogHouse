@@ -1,16 +1,18 @@
+<app-menu></app-menu>
+
 <div class="containerr my-5 mt-2" id="extracciones">
     <div class="row">
         <div class="col-12">
             <h2 class="text-center subtitle"> Extracciones </h2>
         </div>
     </div>
-    <div class="slider">
-      <ul>
-          <li *ngFor="let extraccion of extracciones"> 
-            <img src="{{extraccion.foto[0]}}"  alt="slider1"> 
-            <p class="text-white text-center">{{extraccion.nombre}}</p>
-          </li> 
-
-      </ul>
-  </div>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000" *ngFor="let extraccion of extracciones">
+      <img src={{extraccion.foto[0]}} class="align-self-center my-5" alt="..." >
+		 <div class="carousel-caption d-none d-md-block">
+        <h5 class="image-title">{{extraccion.nombre}}</h5>
+	  	 <!--<p>Price: {{extraccion.precio}}</p>-->
+      </div>
+    </div>
 </div>
