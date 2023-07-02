@@ -22,19 +22,19 @@ public destilado2: Destilados = {
 public destilado3: Destilados = {
     nombre: 'Runtz Weedcake',  
     foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-destilado-runtz-weedingcake.jpg?alt=media&token=fb3f7773-b3ae-4526-be56-11cabd3503f1'],
-    descripcion: 'Hibrida sabor terroso',
+    descripcion: 'Destilado Runtz hibrida sabor terroso',
     precio: 75000
 }
 public destilado4: Destilados = {
     nombre: 'Push Laconfidential',  
     foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-destilado-push-laconfidential.jpg?alt=media&token=f090fb24-4c9d-4173-9633-dd3df6ff1fa6'],
-    descripcion: 'Hibrida sabor terroso',
+    descripcion: 'Destilado Push hibrida sabor citrico',
     precio: 75000
 }
 public destilado5: Destilados = {
     nombre: 'Push Bluedream',  
     foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-destilado-push-bluedream.jpg?alt=media&token=0605d3af-c872-43a2-aefe-936358324172'],
-    descripcion: 'Hibrida sabor terroso',
+    descripcion: 'Destilado Push indica',
     precio: 75000
 }
 

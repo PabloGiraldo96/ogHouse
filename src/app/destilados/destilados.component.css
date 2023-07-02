@@ -15,7 +15,7 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 	top:0;
 	left:0;
 	background-color: black;
-	opacity: 0.6;
+	opacity: 0.4;
 	height: 100%;
 	width: 100%;
 	z-index: -1;
@@ -49,7 +49,6 @@ border-radius: 19px;
   font-size: 16px;
 }
 
-
 .card {
 border-radius: 25px;
 box-shadow: inset 28px 28px 56px #c3c3c3,
@@ -68,6 +67,23 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient 10s ease infinite;
+}
+
+.subtitle_one{	
+  font-size: 1.2vw;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+	text-align: center;
+	color: black;
+
+}
+
+.subtitle_two{
+  font-size: 0.8vw;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+	text-align: center;
+	color: black;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,4 +109,11 @@ img, .card{
   top: -4.3vw;
   width: 76vw;
 }
+
+.subtitle_one{	
+  display: flex;
+  font-size: 8vw;
+}
+
+
 }

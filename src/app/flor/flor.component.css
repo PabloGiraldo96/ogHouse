@@ -49,7 +49,6 @@ image-rendering: auto;
   font-weight: bolder;
 	text-align: center;
 	background-color: black;
-	opacity: 0.6;
   color: white;
 	letter-spacing: 2px;
   background: linear-gradient(-45deg, #22ff00, #51b06a, #ffffff, #ffffff, #ffffff);
@@ -59,7 +58,13 @@ image-rendering: auto;
   animation: gradient 10s ease infinite;
 }
 
-
+.subtitle_one{	
+  font-size: 1.2vw;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+	text-align: center;
+	color: black;
+}
 
 .image-title {
   position: absolute;
@@ -168,5 +173,10 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 	object-fit: contain;
   padding: 8%; /* Ajusta el relleno del banner para dispositivos más pequeños */
 	}
+
+.subtitle_one{	
+  display: flex;
+  font-size: 8vw;
+}
 
 }

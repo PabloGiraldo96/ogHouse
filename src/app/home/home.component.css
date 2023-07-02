@@ -72,7 +72,6 @@ left: 8vw;
 font-size: 7vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños */    
 }
 
-
  img {
    height: auto; /* Hace que la altura de la imagen sea automática para dispositivos más pequeños */
    width: 100%;
@@ -84,7 +83,7 @@ font-size: 7vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños 
 	background-attachment: fixed;
 	object-fit: contain;
     padding: 8%; /* Ajusta el relleno del banner para dispositivos más pequeños */
-	height: 170vw;
+	height: 190vw;
   }
 
 }

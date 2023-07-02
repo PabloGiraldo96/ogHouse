@@ -1,24 +1,21 @@
 <app-menu></app-menu>
 
-<div class="containerr my-5" id="flores">
+<div class="containerr mt-5" id="flores">
     <div class="row">
-        <div class="col-12">
-            <h2 class="text-center subtitle">Conoce nuestras flores</h2>
-			<br>
+        <div class="col-12"> 
+            <h2 class="text-center subtitle mt-5 mb-5">Conoce nuestras flores</h2>
         </div>
-        <hr>
     </div>
-	<br>
-    <div class="row row-cols-1 row-cols-md-4 mt-5 align-self-center">
+    <div class="row row-cols-1 row-cols-md-4 mt-3 align-self-center">
         <div class="col mb-3 slide-bck-center" *ngFor="let flor of flores">
     <div class="card h-100 shadow text-center mt-3 mb-3"> 
     <div class="image-container position-relative">
         <img src={{flor.foto[0]}} alt="foto" class="img-fluid w-100 mt-3 zoom">
         <h4 class="image-title">{{flor.nombre}}</h4>
     </div>
-    <h6 class="mt-3">{{flor.descripcion}}</h6>
+    <h6 class="mt-3 subtitle_one">{{flor.descripcion}}</h6>
  
-    <h6 class="fw-bold mt-3">Price: {{flor.precio}}</h6>
+    <!--<h6 class="fw-bold mt-3">Price: {{flor.precio}}</h6>-->
     </div>
 	<!--<a href="https://api.whatsapp.com/send?phone=3209525410" class="floating-btn" target="_blank">
 	<i class="fab fa-whatsapp"></i>
