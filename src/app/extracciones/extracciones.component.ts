@@ -6,9 +6,8 @@ import { interval, Subscription } from 'rxjs';
   templateUrl: './extracciones.component.html',
   styleUrls: ['./extracciones.component.css']
 })
-export class ExtraccionesComponent implements OnInit {
-private subscription!: Subscription;
-public tiempo:boolean = false
+export class ExtraccionesComponent {
+
 public extraccion1: Extracciones = {
     nombre: 'Bubble Fruit',  
     foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-extraccion-bubblefruit.jpg?alt=media&token=be9c08ad-ea53-4eee-ba9f-93a1b0021dc0'],
@@ -34,12 +33,7 @@ public extraccion4: Extracciones = {
     precio: 75000
 }
 
-ngOnInit() {
-  this.subscription = interval(5000) // tiempo de peticion 5 segundos
-  .subscribe(() => {
-    // informacion dinamica del api
-  });
-}
+public tiempoTransicion: number = 2000;
 
 public extracciones: Extracciones[] = [this.extraccion1, this.extraccion2, this.extraccion3, this.extraccion4]
 

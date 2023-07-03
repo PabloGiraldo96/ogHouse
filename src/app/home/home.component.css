@@ -73,7 +73,7 @@ font-size: 7vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños 
 }
 
  img {
-   height: auto; /* Hace que la altura de la imagen sea automática para dispositivos más pequeños */
+   height: 110vw; /* Hace que la altura de la imagen sea automática para dispositivos más pequeños */
    width: 100%;
 }
 
