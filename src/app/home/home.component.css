@@ -30,6 +30,14 @@
 	color: white;
 }
 
+.subtitle{	
+  font-size: 2vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color:white;
+}
+
 .focus-in-expand {
 	-webkit-animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	        animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
@@ -68,8 +76,17 @@
 .title{
 position: absolute;
 top: 70vw;
-left: 8vw;
-font-size: 7vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños */    
+left: 2vw;
+font-size: 8vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños */    
+}
+
+.subtitle{	
+  display: flex;
+  position: absolute;
+  bottom: 20vw;
+  left: 10vw;
+  justify-content: center;
+  font-size: 6vw;
 }
 
  img {

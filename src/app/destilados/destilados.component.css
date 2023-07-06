@@ -75,7 +75,6 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
   font-weight: bolder;
 	text-align: center;
 	color: black;
-
 }
 
 .subtitle_two{
@@ -85,6 +84,34 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 	text-align: center;
 	color: black;
 }
+
+.slide-top {
+	-webkit-animation: slide-top 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10vw);
+            transform: translateY(-10vw);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(5vw);
+            transform: translateY(5vw);
+  }
+}
+
+
 
 @media screen and (max-width: 768px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 768px */

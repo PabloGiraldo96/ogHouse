@@ -1,2 +1,21 @@
 <app-menu></app-menu>
-<p>eventos works!</p>
+
+<div class="containerr mt-5" id="eventos">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center subtitle"> Eventos </h2>
+        </div>
+    </div>
+<div id="carouselExampleFade" class="carousel slide carousel-fade focus-in-expand" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000" *ngFor="let evento of eventos">
+      <img src={{evento.foto[0]}} class="align-self-center my-5" alt="..." >
+		 <div class="carousel-caption d-none d-md-block">
+        <h5 class="image-title">{{evento.nombre}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<app-footer></app-footer>

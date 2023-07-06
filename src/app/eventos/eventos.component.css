@@ -1,0 +1,134 @@
+
+.containerr{
+background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-evento.jpg?alt=media&token=0665e3ea-fb7b-4afa-ba7c-c449ac16c4a0");
+	background-position: top center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 9%;
+	position: relative;
+    image-rendering: auto;
+	z-index: 0;
+}
+
+
+.subtitle{
+	font-size: 2vw;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	background-color: black;
+	opacity: 0.8;
+  	color: white;
+	letter-spacing: 2px;
+	background: linear-gradient(-45deg, #22ff00, #51b06a, #ffffff, #ffffff, #ffffff);
+	background-size: 400% 400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 10s ease infinite;
+}
+
+.containerr::after {
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: black;
+	opacity: 0.7;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+img{
+position: relative;
+left: 20vw;
+border-radius: 24px;
+width: 40vw;
+height:60vw;
+}
+
+.image-title {
+  position: absolute;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
+  background-color: rgba(0, 0.7, 0.7, 0.7);
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  font-size: 16px;
+}
+
+.carousel-inner .carousel-item:first-of-type {
+  transform: translateX(0);
+}
+
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.2em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para dispositivos con un ancho máximo de 768px */
+
+.subtitle{
+	font-size: 9vw;
+}
+
+.containerr {
+	height: 160vw;
+  }
+
+img, .card{
+	position: relative;
+	top: 12vw;
+    left: 2vw;
+	width: 75vw;
+	height: 110vw;
+}
+
+
+}

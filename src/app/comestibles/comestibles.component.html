@@ -1,2 +1,24 @@
 <app-menu></app-menu>
-<p>comestibles works!</p>
+
+<div class="containerr mt-5" id="comestibles">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center subtitle"> Comestibles </h2>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 mt-3 align-self-center slide-top">
+        <div class="col mb-3" *ngFor="let comestible of comestibles">
+    <div class="card h-100 shadow text-center mt-3 mb-3"> 
+    <div class="image-container position-relative">
+        <img src={{comestible.foto[0]}} alt="foto" class="img-fluid w-100 mt-3 zoom">
+        <h4 class="image-title">{{comestible.nombre}}</h4>
+    </div>
+    <h6 class="mt-3 subtitle_one">{{comestible.descripcion}}</h6>
+ 
+    <!--<h6 class="fw-bold mt-3 subtitle_two">{{destilado.precio}}</h6>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
