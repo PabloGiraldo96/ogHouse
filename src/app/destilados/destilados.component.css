@@ -85,29 +85,36 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 	color: black;
 }
 
-.slide-top {
-	-webkit-animation: slide-top 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 1.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
-@-webkit-keyframes slide-top {
+
+@-webkit-keyframes focus-in-expand {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(-10vw);
-            transform: translateY(-10vw);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
   }
 }
-@keyframes slide-top {
+@keyframes focus-in-expand {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    letter-spacing: -0.2em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(5vw);
-            transform: translateY(5vw);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
   }
 }
 
