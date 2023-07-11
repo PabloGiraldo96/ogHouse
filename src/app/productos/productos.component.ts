@@ -1,34 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { Productos } from '../interfaces/Productos';
+import { ProductosService } from '../services/productos.service';
 
 @Component({
   selector: 'app-productos',
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css']
 })
-export class ProductosComponent {
 
-public producto1: Productos = {
-    nombre: 'Tratamiento Psilocibina',  
-    foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-psilocibina.jpeg?alt=media&token=8508d8e5-5306-4f50-8a75-ddf43a81527e'],
-    descripcion: 'Psilocibina medicine pills',
-    precio: 75000
-}
-public producto2: Productos = {
-    nombre: 'Tratamiento Psilocibina',  
-    foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-psilocibina.jpeg?alt=media&token=8508d8e5-5306-4f50-8a75-ddf43a81527e'],
-    descripcion: 'Psilocibina medicine pills',
-    precio: 75000
-}
-public producto3: Productos = {
-    nombre: 'Tratamiento Psilocibina',  
-    foto:['https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-psilocibina.jpeg?alt=media&token=8508d8e5-5306-4f50-8a75-ddf43a81527e'],
-    descripcion: 'Psilocibina medicine pills',
-    precio: 75000
+
+export class ProductosComponent implements OnInit {
+
+public productos : Productos[] = []
+
+  constructor(public servicio: ProductosService){
 }
 
-public productos : Productos[] = [this.producto1, this.producto2, this.producto3]
-
-  constructor() { console.log(this.productos)}
-
+ngOnInit(): void {
+  this.servicio.buscarProductos().subscribe((respuesta)=>{
+  console.log(respuesta)
+  this.productos = respuesta.Productos
+  })
+}
 }

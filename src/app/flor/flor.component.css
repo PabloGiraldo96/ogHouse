@@ -102,6 +102,7 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
   transform: scale(1.1);
 }
 
+
 .focus-in-expand {
 	-webkit-animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	        animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
@@ -164,15 +165,15 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 .card{
 	width: 75vw;
 	height: 65vw;
-
 }
 
 .image-container {
   object-fit: contain;
   position: absolute;
   left: -1vw;
-  top: -4.4vw;
+  top: -4vw;
   width: 76vw;
+
 }
 
 .containerr{
@@ -185,7 +186,7 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 
 .subtitle_one{	
   display: flex;
-  font-size: 8vw;
+  font-size: 7vw;
 }
 
 }
