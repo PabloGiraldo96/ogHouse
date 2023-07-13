@@ -15,7 +15,7 @@ public extracciones: Extracciones[] = []
 
 ngOnInit(): void {
 this.servicio.buscarExtracciones().subscribe((respuesta)=> {
-this.extracciones = respuesta.extracciones
+this.extracciones = respuesta.extraccion
 console.log(this.extracciones) 
   })  
   }

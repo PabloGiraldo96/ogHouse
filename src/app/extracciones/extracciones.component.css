@@ -1,6 +1,6 @@
 
 .containerr{
-	background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-extraccion-bubble-fruit-thc-a.jpg?alt=media&token=885ae611-aad5-40a2-a703-c676c7412878");
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/EXTRACCION.jpg?alt=media&token=0604b139-ff14-49be-8f2f-5836d01009e8");
 	background-position: top center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -11,6 +11,17 @@
 	
 }
 
+.containerr::after {
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: black;
+	opacity: 0.7;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
 
 .subtitle{
 	font-size: 2vw;
@@ -28,18 +39,6 @@
 	animation: gradient 10s ease infinite;
 }
 
-.containerr::after {
-	content: '';
-	position: absolute;
-	top:0;
-	left:0;
-	background-color: black;
-	opacity: 0.5;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-}
-
 img{
 	position: relative;
 	left: 26vw;
@@ -47,6 +46,7 @@ img{
 	width: 30vw;
 	height:20vw;
 }
+
 
 .image-title {
 	position: absolute;
@@ -58,10 +58,6 @@ img{
 	color: rgb(255, 255, 255);
 	padding: 8px;
 	font-size: 16px;
-}
-
-.carousel-inner .carousel-item:first-of-type {
-  transform: translateX(0);
 }
 
 .focus-in-expand {

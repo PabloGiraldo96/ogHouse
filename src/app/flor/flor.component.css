@@ -109,7 +109,6 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 	        animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
-
 @-webkit-keyframes focus-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -159,6 +158,7 @@ font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 
 
 .image-title{
+  font-size: 4vw;
   position: absolute;
   bottom: 7vw;
 }
