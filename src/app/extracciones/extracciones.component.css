@@ -39,32 +39,43 @@
 	animation: gradient 10s ease infinite;
 }
 
-img{
-	position: relative;
-	left: 26vw;
-	border-radius: 24px;
-	width: 30vw;
-	height:20vw;
+.card {
+border-radius: 25px;
+box-shadow: inset 28px 28px 56px #c3c3c3,
+            inset -28px -28px 56px #474747;
+font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
 }
 
-
 .image-title {
-	position: absolute;
-	bottom: 2vw;
-	left: 50%;
-	transform: translateX(-50%);
-	font-family: 'Poppins', sans-serif;	color: rgb(0, 0, 0);
-	background-color: rgba(0, 0.7, 0.7, 0.7);
-	color: rgb(255, 255, 255);
-	padding: 8px;
-	font-size: 16px;
+position: absolute;
+bottom: 2vw;
+left: 50%;
+transform: translateX(-50%);
+font-family: 'Poppins', sans-serif;	color: rgb(0, 0,0);
+background-color: rgba(0, 0.7, 0.7, 0.7);
+color: rgb(255, 255, 255);
+padding: 8px;
+font-size: 16px;
+}
+
+.image-container {
+  position: absolute;
+  border-radius: 22px;
+  width: 20.2vw;
+  top: -2.5vw;
+  left: -0.1vw;
+}
+
+img{
+border-radius: 19px;
+height: 19vw;
+image-rendering: auto;
 }
 
 .focus-in-expand {
 	-webkit-animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	        animation: focus-in-expand 5.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
-
 
 @-webkit-keyframes focus-in-expand {
   0% {
@@ -108,20 +119,47 @@ img{
 @media screen and (max-width: 768px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 768px */
 
-.subtitle{
-	font-size: 9vw;
+.card{
+	width: 75vw;
+	height: 65vw;
 }
 
-.containerr {
-	height: 160vw;
-  }
+img{
+position: relative;
+top: -9vw;
+height: 100vw;
+image-rendering: auto;
+}
 
-img, .card{
-	position: relative;
-	top: 12vw;
-    left: 2vw;
-	width: 80vw;
-	height: 90vw;
+.image-title{
+  font-size: 4vw;
+  position: absolute;
+  bottom: 9vw;
+}
+
+.image-container {
+  object-fit: contain;
+  position: absolute;
+  left: -1vw;
+  top: -4vw;
+  width: 76vw;
+}
+
+.containerr{
+  image-rendering: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: contain;
+  padding: 8%; /* Ajusta el relleno del banner para dispositivos más pequeños */
+	}
+
+.subtitle_one {	
+  display: flex;
+  font-size: 4vw;
+}
+
+.subtitle{
+font-size: 8vw;
 }
 
 }
