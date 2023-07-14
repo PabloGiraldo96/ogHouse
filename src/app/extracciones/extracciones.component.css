@@ -59,11 +59,12 @@ font-size: 16px;
 }
 
 .image-container {
-  position: absolute;
+  position: relative;
   border-radius: 22px;
-  width: 20.2vw;
-  top: -2.5vw;
-  left: -0.1vw;
+  width: 19.5vw;
+  top: -3vw;
+  left: 0vw;
+  object-fit: contain;
 }
 
 img{
@@ -127,7 +128,7 @@ image-rendering: auto;
 img{
 position: relative;
 top: -9vw;
-height: 100vw;
+height: 80vw;
 image-rendering: auto;
 }
 

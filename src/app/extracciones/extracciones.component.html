@@ -10,7 +10,7 @@
         <div class="col mb-3 slide-bck-center" *ngFor="let extraccion of extracciones">
     <div class="card h-100 shadow text-center mt-3 mb-3"> 
     <div class="image-container position-relative">
-        <img src={{extraccion.foto[0]}} alt="foto" class="img-fluid w-100 mt-5">
+        <img src={{extraccion.foto[0]}} alt="foto" class="img-fluid w-100 mt-5 zoom" loading="lazy">
         <h4 class="image-title">{{extraccion.nombre}}</h4>
     </div>
     <h6 class="mt-3 subtitle_one align-self-center">{{extraccion.descripcion}}</h6>
