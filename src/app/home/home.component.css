@@ -38,18 +38,13 @@
   color:white;
 }
 
-.cursor{
-position: fixed;
-width:40px ;
-height:40px ;
-margin-top:-20px ;
-margin-left:-20px;
-border-radius: 50%;
-border: 2px solid #16a085;
-transition: transform .2s ease;
-transform-origin: center center;
-pointer-events: none;
-z-index: 1000;
+.picture{
+position: relative;
+left: 20vw;
+top: 10vw;
+width: 12vw;
+height: 12vw;
+border-radius: 35%;
 }
 
 @media screen and (max-width: 768px){
@@ -74,6 +69,16 @@ font-size: 8vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños 
    height: 110vw; /* Hace que la altura de la imagen sea automática para dispositivos más pequeños */
    width: 100%;
 }
+
+.picture{
+position: relative;
+left: 18vw;
+top: 90vw;
+width: 40vw;
+height: 40vw;
+border-radius: 35%;
+}
+
 
 .Banner{
 	image-rendering: auto;

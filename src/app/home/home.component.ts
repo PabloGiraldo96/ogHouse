@@ -24,7 +24,10 @@ export class HomeComponent implements AfterViewInit {
       extendTimeline: true,
     });
 
-    gsap.from(".box", { duration: 5, opacity: 0, ease: "slow(2, 1.5, true)", y: -800 });
+    gsap.from(".box", { duration: 3, opacity: 0, ease: "slow(2, 1.5, true)", y: -400 });
     gsap.effects['fade'](".subtitle");
+
+    gsap.from(".picture", { opacity: 0, duration: 15, ease: "slow(2, 1.5, true)"}); 
+
   }
 }
