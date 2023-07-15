@@ -24,13 +24,14 @@ export class HomeComponent implements AfterViewInit {
       extendTimeline: true,
     });
 
-    gsap.to('.subtitle', { opacity: 0, duration: 12, repeat: 0, yoyo: true });
+    gsap.from('.subtitle', { opacity: 1, repeat: 0 });
+    gsap.to('.subtitle', { opacity: 0, duration: 5, repeat: 1, yoyo: true });
     //gsap.to('.picture', { opacity: 1, duration: 4.5, repeat: 0, yoyo: true });
 
     gsap.from(".box", { duration: 5, opacity: 0, ease: "slow(2, 1.5, true)", y: -400 });
     //gsap.effects['fade']("");
 
-    gsap.from(".picture", { opacity: 0, duration: 15, ease: "ease(1, 1.5, true)", y: -480}); 
+    gsap.from(".picture", { opacity: 0, duration: 5, ease: "ease(1, 1.5, true)", y: -480}); 
 
   }
 }
