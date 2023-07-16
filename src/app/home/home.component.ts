@@ -25,7 +25,7 @@ export class HomeComponent implements AfterViewInit {
     });
 
     gsap.from('.subtitle', { opacity: 1, repeat: 0 });
-    gsap.to('.subtitle', { opacity: 0, duration: 5, repeat: 1, yoyo: true });
+    gsap.to('.subtitle', { opacity: 0, duration: 5, repeat: 0, yoyo: true });
     //gsap.to('.picture', { opacity: 1, duration: 4.5, repeat: 0, yoyo: true });
 
     gsap.from(".box", { duration: 5, opacity: 0, ease: "slow(2, 1.5, true)", y: -400 });
