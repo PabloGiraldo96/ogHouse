@@ -32,13 +32,13 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 .image-container {
   position: absolute;
   width: 20.2vw;
-  top: -2.5vw;
+  top: -2vw;
   left: -0.1vw;
 }
 
 img{
 border-radius: 19px;
-height: 21vw;
+height: 20vw;
 }
 
 .image-title {
@@ -136,7 +136,7 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 
 img, .card{
 	width: 75vw;
-	height: 65vw;
+	height: 75vw;
 
 }
 
