@@ -5,6 +5,8 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 	background-attachment: fixed;
 	padding: 8%;
 	position: relative;
+  font-family: poppins;
+	text-transform: uppercase;
   image-rendering: auto;
 	z-index: 0;
 }
@@ -59,8 +61,7 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 }
 
 .subtitle{
-	font-size: 2w;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5vw;
   font-weight: bolder;
 	text-align: center;
   color: white;
@@ -74,7 +75,6 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 
 .subtitle_one{	
   font-size: 1.2vw;
-	font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 	text-align: center;
 	color: black;
@@ -121,6 +121,20 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
     opacity: 1;
   }
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 
 @media screen and (max-width: 768px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 768px */

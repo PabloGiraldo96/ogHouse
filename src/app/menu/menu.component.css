@@ -4,7 +4,12 @@ body {
 
 .menu{
   background-color: black;
-
+	font-family: poppins;
+	text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .center-nav {

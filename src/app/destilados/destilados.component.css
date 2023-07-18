@@ -1,10 +1,12 @@
 .containerr{
-background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/og-destilados-banner.jpg?alt=media&token=e2d5f372-42e0-42a5-bc81-ee56f5d07f7d");
+background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-73b37.appspot.com/o/destiladosbanner.jpeg?alt=media&token=531881a0-e72c-47a4-b03b-63746790ae1f");
 	background-position: top center;
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 8%;
 	position: relative;
+  font-family: poppins;
+	text-transform: uppercase;
   image-rendering: auto;
 	z-index: 0;
 }
@@ -15,7 +17,7 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 	top:0;
 	left:0;
 	background-color: black;
-	opacity: 0.4;
+	opacity: 0.6;
 	height: 100%;
 	width: 100%;
 	z-index: -1;
@@ -59,11 +61,9 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 }
 
 .subtitle{
-	font-size: 2w;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5vw;
   font-weight: bolder;
 	text-align: center;
-  color: white;
 	letter-spacing: 2px;
   background: linear-gradient(-45deg, #22ff00, #51b06a, #ffffff, #ffffff, #ffffff);
   background-size: 400% 400%;
@@ -74,7 +74,6 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 
 .subtitle_one{	
   font-size: 1.2vw;
-	font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 	text-align: center;
 	color: black;
@@ -82,7 +81,6 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
 
 .subtitle_two{
   font-size: 0.8vw;
-	font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 	text-align: center;
 	color: black;
@@ -121,7 +119,17 @@ box-shadow: inset 28px 28px 56px #c3c3c3,
   }
 }
 
-
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 @media screen and (max-width: 768px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 768px */

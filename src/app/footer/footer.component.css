@@ -6,6 +6,8 @@
 	image-rendering: auto;
 	padding: 25%;
 	position: relative;
+	font-family: poppins;
+	text-transform: uppercase;
 	z-index: 1;
 }
 

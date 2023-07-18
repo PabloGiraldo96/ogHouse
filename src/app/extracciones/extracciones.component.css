@@ -6,7 +6,9 @@
 	background-attachment: fixed;
 	padding: 9%;
 	position: relative;
-  	image-rendering: auto;
+  font-family: poppins;
+	text-transform: uppercase;
+  image-rendering: auto;
 	z-index: 0;
 	
 }
@@ -24,13 +26,12 @@
 }
 
 .subtitle{
-	font-size: 2vw;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5vw;
 	font-weight: bolder;
 	text-align: center;
 	background-color: black;
 	opacity: 0.6;
-  	color: white;
+  color: white;
 	letter-spacing: 2px;
 	background: linear-gradient(-45deg, #22ff00, #51b06a, #ffffff, #ffffff, #ffffff);
 	background-size: 400% 400%;
@@ -51,7 +52,6 @@ position: absolute;
 bottom: 2vw;
 left: 50%;
 transform: translateX(-50%);
-font-family: 'Poppins', sans-serif;	color: rgb(0, 0,0);
 background-color: rgba(0, 0.7, 0.7, 0.7);
 color: rgb(255, 255, 255);
 padding: 8px;

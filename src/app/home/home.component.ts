@@ -28,10 +28,11 @@ export class HomeComponent implements AfterViewInit {
     gsap.to('.subtitle', { opacity: 0, duration: 5, repeat: 0, yoyo: true });
     //gsap.to('.picture', { opacity: 1, duration: 4.5, repeat: 0, yoyo: true });
 
-    gsap.from(".box", { duration: 5, opacity: 0, ease: "slow(2, 1.5, true)", y: -400 });
+
+    gsap.from(".box", { duration: 1, opacity: 0, ease: "slow(2, 1.5, true)", y: -150 });
     //gsap.effects['fade']("");
 
-    gsap.from(".picture", { opacity: 0, duration: 5, ease: "ease(1, 1.5, true)", y: -480}); 
+    gsap.from(".picture", { opacity: 0, duration: 5, ease: "ease(1, 1.5, true)", y: -380}); 
 
   }
 }

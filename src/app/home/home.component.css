@@ -21,18 +21,25 @@
 	z-index: -1;
 }
 
-
 .title{
 	font-size: 4vw;
-	font-family: 'Montserrat', sans-serif;
+	font-family: poppins;  
+	text-transform: uppercase;
+	letter-spacing: 5px;
 	text-align: center;
 	font-weight: bolder;
 	color: white;
+	background: linear-gradient(-45deg, #f8ff25, #aeb916, #ffff, #ffff, #ffff);
+	background-size: 400% 400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 10s ease infinite;
 }
 
 .subtitle{	
   font-size: 2vw;
-  font-family: 'Montserrat', sans-serif;
+  font-family: poppins;
+  text-transform: uppercase;
   font-weight: bolder;
   text-align: center;
   color:white;
@@ -40,20 +47,32 @@
 
 .picture{
 position: relative;
-left: 20vw;
+left: 22vw;
 top: 10vw;
 width: 12vw;
 height: 12vw;
 border-radius: 35%;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 @media screen and (max-width: 768px){
 
 .title{
 position: absolute;
-top: 70vw;
-left: 2vw;
-font-size: 8vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños */    
+top: 80vw;
+left: 18vw;
+font-size: 10vw; /* Ajusta el tamaño de fuente para dispositivos más pequeños */    
 }
 
 .subtitle{	

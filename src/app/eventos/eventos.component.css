@@ -6,14 +6,15 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 	background-attachment: fixed;
 	padding: 9%;
 	position: relative;
+	position: relative;
+  	font-family: poppins;
     image-rendering: auto;
 	z-index: 0;
 }
 
 
 .subtitle{
-	font-size: 2vw;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5vw;
 	font-weight: bolder;
 	text-align: center;
 	background-color: black;
@@ -107,9 +108,6 @@ height:60vw;
 		background-position: 0% 50%;
 	}
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 768px */

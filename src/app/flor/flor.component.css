@@ -6,6 +6,8 @@ background-image: url("https://firebasestorage.googleapis.com/v0/b/oghouse2023-7
 	padding: 8%;
 	position: relative;
   image-rendering: auto;
+	font-family: poppins;
+	text-transform: uppercase;
 	z-index: 0;
 }
 
@@ -45,7 +47,6 @@ image-rendering: auto;
 
 .subtitle{
 	font-size: 2.5vw;
-	font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 	text-align: center;
 	background-color: black;
@@ -60,7 +61,6 @@ image-rendering: auto;
 
 .subtitle_one{	
   font-size: 1.8vw;
-	font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 	text-align: center;
 	color: black;
