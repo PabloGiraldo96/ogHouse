@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Productos } from '../interfaces/Productos';
 import { ProductosService } from '../services/productos.service';
+import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-productos',
@@ -21,5 +22,8 @@ ngOnInit(): void {
   console.log(respuesta)
   this.productos = respuesta.Productos
   })
+
+  gsap.from(".productos", { opacity: 0, duration: 3, ease: "ease(2, 1.5, true)", y: 280}); 
+
 }
 }
